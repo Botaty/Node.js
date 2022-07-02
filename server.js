@@ -327,18 +327,18 @@ app.post('/profilepic',  upload.single("image"),   function(req, res){
             
 });
          
-// app.post('/comparetest'   ,upload.single("image")   ,(req, res) => {
+app.post('/comparetest'   ,upload.single("image")   ,(req, res) => {
 
-//     const imageurl = url.pathToFileURL(req.file.path)
-//     console.log("test" + imageurl);
+    const imageurl = url.pathToFileURL(req.file.path)
+    console.log("test" + imageurl);
 
 
 
-//     // const r = fs.createReadStream(req.file.buffer) // or any other way to get a readable stream
-//     // const ps = new stream.PassThrough() // <---- this makes a trick with stream error handling
+    // const r = fs.createReadStream(req.file.buffer) // or any other way to get a readable stream
+    // const ps = new stream.PassThrough() // <---- this makes a trick with stream error handling
 
             
-//     });
+    });
             
 
 
